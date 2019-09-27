@@ -1,9 +1,8 @@
-# taro-chart-f2
-taro-chart-f2
+# remax-chart-f2
+remax-chart-f2
 
 *目前支持: 微信小程序*
 
-根据 `taro-f2@1.2.1` 修改而来 https://www.npmjs.com/package/taro-f2/v/1.2.1
 
 F2图表具体使用方法请参考: https://github.com/antvis/f2
 
@@ -11,34 +10,21 @@ F2图表具体使用方法请参考: https://github.com/antvis/f2
 ## 安装
 
 ```bash
-$ npm i -S taro-chart-f2
-```
-
-修改项目配置文件 config/index.js 
-```json
-{
-  "weapp": {
-    "compile": {
-      "exclude": [
-        "node_modules/taro-chart-f2/src/components/f2-canvas/lib/f2.js"
-      ]
-    }
-  }
-}
+$ npm i -S remax-chart-f2
 ```
 
 ## 用法
 
 ```javascript
-import { F2Canvas } from 'taro-chart-f2'
+import { F2Canvas } from 'remax-chart-f2'
 ```
 
 ## 示例
 
 ```javascript
-import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
-import { F2Canvas } from 'taro-chart-f2'
+import React, { Component } from 'react'
+import { View } from 'remax/wechat'
+import { F2Canvas } from 'remax-chart-f2'
 
 // 绘制实例
 const draw = [
